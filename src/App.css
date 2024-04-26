@@ -9,3 +9,19 @@ nav {
 .gradientBg {
   background: linear-gradient(99deg, #5c198d 0%, #9430de 100%);
 }
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (min-width: 768px) {
+  .animate-scroll {
+    animation: scrollAnimation 30s linear infinite;
+    display: flex;
+    gap: 1rem;
+  }
+}
