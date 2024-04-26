@@ -38,7 +38,7 @@ const Header = () => {
                   <Link
                     key={link}
                     to={path}
-                    className={`block hover:text-blue-300 cursor-pointer ${
+                    className={`block hover:text-secondary cursor-pointer ${
                       location.pathname === path ? "text-blue" : ""
                     }`}
                   >
