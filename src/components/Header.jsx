@@ -19,7 +19,7 @@ const Header = () => {
     <>
       <header>
         {/* Navbar */}
-        <nav className="gradientBg px-5 max-w-screen-2xl mx-auto border-b fixed top-0 left-0 right-0">
+        <nav className="gradientBg px-5 max-w-screen-2xl mx-auto  fixed top-0 left-0 right-0">
           <div className="text-lg py-4 container mx-auto flex justify-between items-center font-medium">
             {/* Logo */}
             <div>
