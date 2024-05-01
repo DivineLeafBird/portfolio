@@ -49,14 +49,14 @@ const ProjectGrid = () => {
                   src={project.imgSrc}
                   alt={project.name}
                 />
-                <span className=" text-secondary block text-center mt-2">
+                <span className=" text-secondary font-medium block text-center mt-2">
                   {project.name}
                 </span>
                 <div className="mt-2 flex justify-between">
                   {project.tech.map((tech, index) => (
                     <span
                       key={index}
-                      className="inline-block  text-secondary border-2 border-secondary rounded-full px-2 py-1 text-xs font-medium mr-2"
+                      className="inline-block  text-secondary border-2 border-secondary rounded-full px-2 py-1 text-xs font-normal md:space-x-2 mr-2"
                     >
                       {tech}
                     </span>

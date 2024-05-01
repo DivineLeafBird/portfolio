@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
           <hr className="my-3" />
           <div className="text-center text-sm md:flex justify-between">
-            <p>&copy; 2024 Kassim Yahya. All Rights Reserved.</p>
+            <p>&copy; 2024 Kassim Yahya Ali. All Rights Reserved.</p>
             <p>Privacy Policy | Terms & Conditions</p>
             <div className="hidden md:flex items-center justify-center space-x-2">
               <FaFacebook className="text-sm" />
