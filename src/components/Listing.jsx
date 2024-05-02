@@ -6,8 +6,15 @@ import Foodie from "../assets/foodie.png";
 
 const Listing = () => {
   const [selectedFilter, setSelectedFilter] = useState("all");
+  const [visibleProjects, setVisibleProjects] = useState(12);
+
   const handleFilterChange = (value) => {
     setSelectedFilter(value);
+    setVisibleProjects(12); // Reset visible projects when filters change
+  };
+
+  const handleLoadMore = () => {
+    setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 12);
   };
 
   const filters = [
@@ -73,6 +80,118 @@ const Listing = () => {
       tech: ["Design", "Figma", "UX / UI"],
       category: "mobile",
     },
+    {
+      imgSrc: Foodie,
+      name: "Foodie App",
+      platform: "Mobile",
+      tech: ["Design", "Figma", "UX / UI"],
+      category: "mobile",
+    },
+    {
+      imgSrc: Foodie,
+      name: "Foodie App",
+      platform: "Mobile",
+      tech: ["Design", "Figma", "UX / UI"],
+      category: "mobile",
+    },
+    {
+      imgSrc: Foodie,
+      name: "Foodie App",
+      platform: "Mobile",
+      tech: ["Design", "Figma", "UX / UI"],
+      category: "mobile",
+    },
+    {
+      imgSrc: Foodie,
+      name: "Foodie App",
+      platform: "Mobile",
+      tech: ["Design", "Figma", "UX / UI"],
+      category: "mobile",
+    },
+    {
+      imgSrc: Foodie,
+      name: "Foodie App",
+      platform: "Mobile",
+      tech: ["Design", "Figma", "UX / UI"],
+      category: "mobile",
+    },
+    {
+      imgSrc: Foodie,
+      name: "Foodie App",
+      platform: "Mobile",
+      tech: ["Design", "Figma", "UX / UI"],
+      category: "mobile",
+    },
+    {
+      imgSrc: Foodie,
+      name: "Foodie App",
+      platform: "Mobile",
+      tech: ["Design", "Figma", "UX / UI"],
+      category: "mobile",
+    },
+    {
+      imgSrc: Foodie,
+      name: "Foodie App",
+      platform: "Mobile",
+      tech: ["Design", "Figma", "UX / UI"],
+      category: "mobile",
+    },
+    {
+      imgSrc: Foodie,
+      name: "Foodie App",
+      platform: "Mobile",
+      tech: ["Design", "Figma", "UX / UI"],
+      category: "mobile",
+    },
+    {
+      imgSrc: Foodie,
+      name: "Foodie App",
+      platform: "Mobile",
+      tech: ["Design", "Figma", "UX / UI"],
+      category: "mobile",
+    },
+    {
+      imgSrc: Foodie,
+      name: "Foodie App",
+      platform: "Mobile",
+      tech: ["Design", "Figma", "UX / UI"],
+      category: "mobile",
+    },
+    {
+      imgSrc: Foodie,
+      name: "Foodie App",
+      platform: "Mobile",
+      tech: ["Design", "Figma", "UX / UI"],
+      category: "mobile",
+    },
+    {
+      imgSrc: Foodie,
+      name: "Foodie App",
+      platform: "Mobile",
+      tech: ["Design", "Figma", "UX / UI"],
+      category: "mobile",
+    },
+    {
+      imgSrc: Foodie,
+      name: "Foodie App",
+      platform: "Mobile",
+      tech: ["Design", "Figma", "UX / UI"],
+      category: "mobile",
+    },
+    {
+      imgSrc: Foodie,
+      name: "Foodie App",
+      platform: "Mobile",
+      tech: ["Design", "Figma", "UX / UI"],
+      category: "mobile",
+    },
+    {
+      imgSrc: Foodie,
+      name: "Foodie App",
+      platform: "Mobile",
+      tech: ["Design", "Figma", "UX / UI"],
+      category: "mobile",
+    },
   ];
   return (
     <>
@@ -102,6 +221,7 @@ const Listing = () => {
               (project) =>
                 selectedFilter === "all" || project.category === selectedFilter
             )
+            .slice(0, visibleProjects)
             .map((project, index) => (
               <div
                 key={index}
@@ -133,6 +253,20 @@ const Listing = () => {
               </div>
             ))}
         </div>
+        {visibleProjects <
+          projectDetails.filter(
+            (project) =>
+              selectedFilter === "all" || project.category === selectedFilter
+          ).length && (
+          <div className="flex items-center justify-center">
+            <button
+              onClick={handleLoadMore}
+              className="bg-blue text-tertiary px-4 py-2 font-medium rounded-2xl mt-8 hover:bg-slate-400 outline-none"
+            >
+              Load More
+            </button>
+          </div>
+        )}
       </section>
     </>
   );
