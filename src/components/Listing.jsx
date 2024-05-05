@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Venpic from "../assets/venpic.png";
-import Purpletray from "../assets/purpletray.png";
-import Foodie from "../assets/foodie.png";
+import projectDetails from "../data/projectDetails";
 
 const Listing = () => {
   const [selectedFilter, setSelectedFilter] = useState("all");
@@ -23,176 +21,7 @@ const Listing = () => {
     { name: "Mobile", value: "mobile" },
     { name: "UX / UI", value: "design" },
   ];
-  const projectDetails = [
-    {
-      imgSrc: Venpic,
-      name: "Venpic Agencies",
-      platform: "Web",
-      tech: ["Full-stack", "Laravel", "PHP"],
-      category: "web",
-    },
-    {
-      imgSrc: Purpletray,
-      name: "Purpletray",
-      platform: "Web",
-      tech: ["Frontend", "React", "JavaScript"],
-      category: "web",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "design",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "mobile",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "design",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "mobile",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "design",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "mobile",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "mobile",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "mobile",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "mobile",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "mobile",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "mobile",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "mobile",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "mobile",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "mobile",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "mobile",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "mobile",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "mobile",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "mobile",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "mobile",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "mobile",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "mobile",
-    },
-    {
-      imgSrc: Foodie,
-      name: "Foodie App",
-      platform: "Mobile",
-      tech: ["Design", "Figma", "UX / UI"],
-      category: "mobile",
-    },
-  ];
+
   return (
     <>
       <section className="gradientBg text-tertiary px-5 py-20 max-w-screen-2xl mx-auto">
@@ -223,34 +52,41 @@ const Listing = () => {
             )
             .slice(0, visibleProjects)
             .map((project, index) => (
-              <div
+              <Link
+                to={{
+                  pathname: `/projects/${project.id}/${project.name
+                    .toLowerCase()
+                    .replace(/\s/g, "-")}`,
+                }}
                 key={index}
-                className="bg-pink p-5 rounded-lg overflow-hidden shadow-md cursor-pointer hover:bg-gray-50 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                // onClick={() => console.log("Project:", project)}
               >
-                <img
-                  className="object-cover"
-                  src={project.imgSrc}
-                  alt={project.name}
-                ></img>
-                <span className=" text-secondary block font-medium mt-2">
-                  {" "}
-                  {project.name}
-                </span>
-                <span className=" text-secondary block font-normal mt-2">
-                  {" "}
-                  {project.platform}
-                </span>
-                <div className="mt-2 flex flex-wrap">
-                  {project.tech.map((tech, index) => (
-                    <span
-                      key={index}
-                      className=" text-secondary px-1 py-1 text-xs font-normal mr-2"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                <div className="bg-pink p-5 rounded-lg overflow-hidden shadow-md cursor-pointer hover:bg-gray-50 md:transition lg:duration-500 lg:ease-in-out lg:transform lg:hover:-translate-y-1 lg:hover:scale-110">
+                  <img
+                    className="object-cover"
+                    src={project.imgSrc}
+                    alt={project.name}
+                  ></img>
+                  <span className=" text-secondary block font-medium mt-2">
+                    {" "}
+                    {project.name}
+                  </span>
+                  <span className=" text-secondary block font-normal mt-2">
+                    {" "}
+                    {project.platform}
+                  </span>
+                  <div className="mt-2 flex flex-wrap">
+                    {project.tech.map((tech, index) => (
+                      <span
+                        key={index}
+                        className=" text-secondary px-1 py-1 text-xs font-normal mr-2"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
         </div>
         {visibleProjects <

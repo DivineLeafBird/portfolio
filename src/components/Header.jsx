@@ -64,7 +64,7 @@ const Header = () => {
         </nav>
         {/* Mobile Menu */}
         <div
-          className={`space-y-4 px-4 pt-24 pb-5 bg-primary text-tertiary text-xl ${
+          className={`space-y-4 z-50 px-4 pt-24 pb-5 bg-primary text-tertiary text-xl ${
             isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
           }`}
         >
