@@ -1,7 +1,4 @@
 import { useState } from "react";
-import Venpic from "../assets/venpic.png";
-import Purpletray from "../assets/purpletray.png";
-import Foodie from "../assets/foodie.png";
 import { AiOutlineLink } from "react-icons/ai";
 
 const DeepDive = ({ project }) => {
@@ -12,59 +9,68 @@ const DeepDive = ({ project }) => {
   };
 
   const handlePrev = () => {
-    setActiveIndex((prevIndex) => (prevIndex === 0 ? 2 : prevIndex - 1));
+    setActiveIndex((prevIndex) =>
+      prevIndex === 0 ? project.images.length - 1 : prevIndex - 1
+    );
   };
 
   const handleNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex === 2 ? 0 : prevIndex + 1));
+    setActiveIndex((prevIndex) =>
+      prevIndex === project.images.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
   return (
     <section className="gradientBg text-tertiary px-5 py-20 max-w-screen-2xl mx-auto">
-      <div className="container mx-auto md:w-1/2 mt-5">
-        <div className="relative rounded-xl overflow-hidden">
-          <div className="carousel ">
-            {[Venpic, Purpletray, Foodie].map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt={`image ${index + 1}`}
-                className={`h-full w-full p-12 object-cover ${
-                  activeIndex === index ? "" : "hidden"
-                }`}
-              />
-            ))}
-          </div>
+      {project && project.images && project.images.length > 0 && (
+        <div className="container mx-auto md:w-1/2 mt-5">
+          <div className="relative rounded-xl overflow-hidden">
+            <div className="carousel ">
+              {project.images.map(
+                (image, index) =>
+                  image !== "" && (
+                    <img
+                      key={index}
+                      src={image}
+                      alt={`image ${index + 1}`}
+                      className={`h-full w-full p-12 object-cover ${
+                        activeIndex === index ? "" : "hidden"
+                      }`}
+                    />
+                  )
+              )}
+            </div>
 
-          <div className="flex items-center justify-between">
-            <button
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 text-gray-800 hover:bg-opacity-75 rounded-full p-3  outline-none"
-              onClick={handlePrev}
-            >
-              &lt;
-            </button>
-            <button
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 text-gray-800 hover:bg-opacity-75 rounded-full p-3  outline-none"
-              onClick={handleNext}
-            >
-              &gt;
-            </button>
-          </div>
-          <div className="absolute bottom-4 left-0 w-full flex justify-center">
-            <div className="flex gap-2">
-              {[0, 1, 2].map((index) => (
-                <span
-                  key={index}
-                  className={`block h-1 w-4 cursor-pointer rounded-2xl transition-all ${
-                    activeIndex === index ? "bg-blue w-8" : "bg-blue/50"
-                  }`}
-                  onClick={() => handleDotClick(index)}
-                />
-              ))}
+            <div className="flex items-center justify-between">
+              <button
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 text-gray-800 hover:bg-opacity-75 rounded-full p-3  outline-none"
+                onClick={handlePrev}
+              >
+                &lt;
+              </button>
+              <button
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 text-gray-800 hover:bg-opacity-75 rounded-full p-3  outline-none"
+                onClick={handleNext}
+              >
+                &gt;
+              </button>
+            </div>
+            <div className="absolute bottom-4 left-0 w-full flex justify-center">
+              <div className="flex gap-2">
+                {project.images.map((_, index) => (
+                  <span
+                    key={index}
+                    className={`block h-1 w-4 cursor-pointer rounded-2xl transition-all ${
+                      activeIndex === index ? "bg-blue w-8" : "bg-blue/50"
+                    }`}
+                    onClick={() => handleDotClick(index)}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
       <div className="container mx-auto space-y-4 mt-5">
         <h2 className="text-2xl font-semibold">Project Details</h2>
         <p className="flex items-center space-x-4">
@@ -98,7 +104,7 @@ const DeepDive = ({ project }) => {
         </p>
         <p className="flex items-stretch space-x-4">
           <span className="font-normal text-lg inline-flex">Back-end: </span>
-          <div className="grid grid-cols-2 gap-1 text-center md:flex md:items-center space-x-2 text-xs md:text-base font-normal ">
+          <span className="grid grid-cols-2 gap-1 text-center md:flex md:items-center space-x-2 text-xs md:text-base font-normal ">
             {project &&
               project.backEnd &&
               project.backEnd.length > 0 &&
@@ -113,7 +119,7 @@ const DeepDive = ({ project }) => {
                     </span>
                   )
               )}
-          </div>
+          </span>
         </p>
         <p className="flex items-center space-x-4">
           <span className="font-medium text-lg">Github:</span>{" "}

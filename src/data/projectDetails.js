@@ -12,6 +12,7 @@ const projectDetails = [
     tech: ["Full-stack", "Laravel", "PHP"],
     frontEnd: ["HTML", "CSS", "JavaScript"],
     backEnd: ["Laravel", "PHP", "MySQL"],
+    images: [Venpic],
     category: "web",
     description:
       "Venpic Agency simplifies the rental search for tenants. Tenants can browse listings with detailed filters, explore properties with virtual tours, and manage applications electronically. The agency can create professional listings, target ideal tenants, manage applications, and collect rent seamlessly - all within one user-friendly web app. Find your perfect place or fill your vacancy effortlessly with Venpic.",
@@ -26,6 +27,7 @@ const projectDetails = [
     tech: ["Frontend", "React", "JavaScript"],
     frontEnd: ["React", "JavaScript", "Tailwind CSS"],
     backEnd: [""],
+    images: [Purpletray],
     category: "web",
     description:
       "Venpic Agency simplifies the rental search for tenants. Tenants can browse listings with detailed filters, explore properties with virtual tours, and manage applications electronically. The agency can create professional listings, target ideal tenants, manage applications, and collect rent seamlessly - all within one user-friendly web app. Find your perfect place or fill your vacancy effortlessly with Venpic.",
@@ -40,6 +42,7 @@ const projectDetails = [
     tech: ["Design", "Figma", "UX / UI"],
     frontEnd: ["Figma", "UX / UI"],
     backEnd: [""],
+    images: [Foodie],
     category: "design",
     description:
       "Venpic Agency simplifies the rental search for tenants. Tenants can browse listings with detailed filters, explore properties with virtual tours, and manage applications electronically. The agency can create professional listings, target ideal tenants, manage applications, and collect rent seamlessly - all within one user-friendly web app. Find your perfect place or fill your vacancy effortlessly with Venpic.",
@@ -54,6 +57,7 @@ const projectDetails = [
     tech: ["Design", "Figma", "UX / UI"],
     frontEnd: ["Figma", "UX / UI"],
     backEnd: [""],
+    images: [Foodie],
     category: "mobile",
     description:
       "Venpic Agency simplifies the rental search for tenants. Tenants can browse listings with detailed filters, explore properties with virtual tours, and manage applications electronically. The agency can create professional listings, target ideal tenants, manage applications, and collect rent seamlessly - all within one user-friendly web app. Find your perfect place or fill your vacancy effortlessly with Venpic.",

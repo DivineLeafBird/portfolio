@@ -18,7 +18,7 @@ nav {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1020px) {
   .animate-scroll {
     animation: scrollAnimation 30s linear infinite;
     display: flex;
