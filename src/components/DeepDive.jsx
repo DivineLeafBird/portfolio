@@ -83,7 +83,7 @@ const DeepDive = ({ project }) => {
           <span className="font-medium text-lg">Tech Stack</span>{" "}
         </p>
         <p className="flex items-stretch space-x-4">
-          <span className="font-medium text-lg inline-flex">Front-end: </span>
+          <span className="font-normal text-lg inline-flex">Front-end: </span>
           <span className="grid grid-cols-2 gap-1 text-center md:flex md:items-center space-x-2 text-xs md:text-base font-normal ">
             {project &&
               project.frontEnd.map((tech, index) => (
@@ -97,18 +97,23 @@ const DeepDive = ({ project }) => {
           </span>
         </p>
         <p className="flex items-stretch space-x-4">
-          <span className="font-medium text-lg inline-flex">Back-end: </span>
-          <span className="grid grid-cols-2 gap-1 text-center md:flex md:items-center space-x-2 text-xs md:text-base font-normal ">
+          <span className="font-normal text-lg inline-flex">Back-end: </span>
+          <div className="grid grid-cols-2 gap-1 text-center md:flex md:items-center space-x-2 text-xs md:text-base font-normal ">
             {project &&
-              project.backEnd.map((tech, index) => (
-                <span
-                  key={index}
-                  className="bg-[#FB503B] rounded-2xl px-4 py-1"
-                >
-                  {tech}
-                </span>
-              ))}
-          </span>
+              project.backEnd &&
+              project.backEnd.length > 0 &&
+              project.backEnd.map(
+                (tech, index) =>
+                  tech !== "" && (
+                    <span
+                      key={index}
+                      className="bg-[#FB503B] rounded-2xl px-4 py-1 "
+                    >
+                      {tech}
+                    </span>
+                  )
+              )}
+          </div>
         </p>
         <p className="flex items-center space-x-4">
           <span className="font-medium text-lg">Github:</span>{" "}
