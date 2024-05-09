@@ -21,7 +21,7 @@ const DeepDive = ({ project }) => {
   };
 
   return (
-    <section className="gradientBg text-tertiary px-5 py-20 max-w-screen-2xl mx-auto">
+    <section className="gradientBg text-tertiary px-5 py-20 max-w-screen-2xl mx-auto min-h-screen">
       {project && project.images && project.images.length > 0 && (
         <div className="container mx-auto md:w-1/2 mt-5">
           <div className="relative rounded-xl overflow-hidden">
