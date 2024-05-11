@@ -1,59 +1,24 @@
 import React from "react";
 import { FaClipboardUser, FaGraduationCap } from "react-icons/fa6";
 import { MdRadioButtonChecked, MdVolunteerActivism } from "react-icons/md";
-import educationDetails from "../data/educationDetails";
-import experienceDetails from "../data/experienceDetails";
 import { TbCertificate } from "react-icons/tb";
 import { IoBulb, IoLanguage } from "react-icons/io5";
+import education from "../data/educationDetails";
+import experience from "../data/experienceDetails";
+import certificates from "../data/certificateDetails";
+import skills from "../data/skillsDetails";
 const ResumeContent = () => {
   const volunteer = [
     "Windows installation on new Desktop computers at Kilifi Township Secondary School.",
     "Mangrove restoration at Kiriba / Wangwani.",
     "Volunteer as a coding instructor at a local community center to teach coding skills to underprivileged youth.",
   ];
-  const certificates = [
-    {
-      title: "Google IT Support Professional Certificate",
-      school: "Coursera",
-      date: "Dec 2021",
-    },
-    {
-      title: "Google Cloud",
-      school: "Google Africa Developer Scholarship",
-      date: "Feb 2021",
-    },
-    {
-      title: "Basic Skills Training",
-      school: "Coding for Employment",
-      date: "Aug 2021",
-    },
-    {
-      title: "Computer Proficiency",
-      school: "Kilifi Collage of Accountancy",
-      date: "Mar 2021",
-    },
-    {
-      title: "Corporate career",
-      school: "Aiducation International",
-      date: "Jul 2019",
-    },
-    {
-      title: "Start-ups",
-      school: "Aiducation International",
-      date: "Mar 2019",
-    },
-    {
-      title: "Financial literacy",
-      school: "Aiducation International",
-      date: "Apr 2019",
-    },
-  ];
   return (
     <>
       <section className="gradientBg text-tertiary px-5 py-20 max-w-screen-2xl mx-auto min-h-screen">
         <h1 className="text-3xl font-semibold mt-5  text-pink ">Resume</h1>
         {/* Education Timeline */}
-        <div className="container md:translate-x-4 mt-5 ">
+        <div className="container xl:translate-x-4 mt-5">
           <div className="flex items-center gap-8 pb-5">
             <div className="bg-secondary p-2 rounded-lg">
               <FaGraduationCap className="w-6 h-6 text-tertiary" />
@@ -63,14 +28,14 @@ const ResumeContent = () => {
             </div>
           </div>
           <ul className="ml-3">
-            {educationDetails.map((item, index) => (
+            {education.map((item, index) => (
               <li
                 key={index}
                 className=" relative flex items-baseline gap-11 pb-10 text-wrap"
               >
                 <div
                   className={`${
-                    index !== educationDetails.length - 1
+                    index !== education.length - 1
                       ? "before:absolute before:left-[7.4px] before:translate-y-2 before:bg-tertiary before:h-full before:w-[1px]"
                       : ""
                   }`}
@@ -94,7 +59,7 @@ const ResumeContent = () => {
           </ul>
         </div>
         {/* Experience Timeline */}
-        <div className="container md:translate-x-4 mt-5 ">
+        <div className="container xl:translate-x-4 mt-5 ">
           <div className="flex items-center gap-8 pb-5">
             <div className="bg-secondary p-2 rounded-lg">
               <FaClipboardUser className="w-6 h-6 text-tertiary" />
@@ -104,14 +69,14 @@ const ResumeContent = () => {
             </div>
           </div>
           <ul className="ml-3">
-            {experienceDetails.map((item, index) => (
+            {experience.map((item, index) => (
               <li
                 key={index}
                 className=" relative flex items-baseline gap-11 pb-10 text-wrap"
               >
                 <div
                   className={`${
-                    index !== experienceDetails.length - 1
+                    index !== experience.length - 1
                       ? "before:absolute before:left-[7.4px] before:translate-y-2 before:bg-tertiary before:h-full before:w-[1px]"
                       : ""
                   }`}
@@ -141,7 +106,7 @@ const ResumeContent = () => {
           </ul>
         </div>
         {/* Volunteer */}
-        <div className="container md:translate-x-4 mt-5 ">
+        <div className="container xl:translate-x-4 mt-5 ">
           <div className="flex items-center gap-8 pb-5">
             <div className="bg-secondary p-2 rounded-lg">
               <MdVolunteerActivism className="w-6 h-6 text-tertiary" />
@@ -161,7 +126,7 @@ const ResumeContent = () => {
           </div>
         </div>
         {/* Certificates */}
-        <div className="container md:translate-x-4 mt-5 ">
+        <div className="container xl:translate-x-4 mt-5 ">
           <div className="flex items-center gap-8 pb-5">
             <div className="bg-secondary p-2 rounded-lg">
               <TbCertificate className="w-6 h-6 text-tertiary" />
@@ -184,7 +149,7 @@ const ResumeContent = () => {
           </div>
         </div>
         {/* Languages */}
-        <div className="container md:translate-x-4 mt-5 ">
+        <div className="container xl:translate-x-4 mt-5 ">
           <div className="flex items-center gap-8 pb-5">
             <div className="bg-secondary p-2 rounded-lg">
               <IoLanguage className="w-6 h-6 text-tertiary" />
@@ -201,13 +166,33 @@ const ResumeContent = () => {
           </div>
         </div>
         {/* Skills */}
-        <div className="container md:translate-x-4 mt-5 ">
+        <div className="container xl:translate-x-4 mt-5 flex flex-col">
           <div className="flex items-center gap-8 pb-5">
             <div className="bg-secondary p-2 rounded-lg">
               <IoBulb className="w-6 h-6 text-tertiary" />
             </div>
             <div className="font-medium text-2xl text-tertiary">
               <h3>Skills</h3>
+            </div>
+          </div>
+          <div className="flex items-center justify-center">
+            <div className="bg-secondary bg-opacity-30 px-8 py-4 rounded-lg md:w-1/2">
+              <ul>
+                {skills.map((item, index) => (
+                  <li key={index} className="space-y-4">
+                    <div className="flex gap-4 space-y-2 items-baseline pt-6">
+                      <h5>{item.title}</h5>
+                      <data value={item.percentage}>{item.percentage}%</data>
+                    </div>
+                    <div className="bg-pink rounded-lg h-1 mt-2">
+                      <div
+                        className="bg-blue rounded-lg h-full"
+                        style={{ width: `${item.percentage}%` }}
+                      ></div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
