@@ -91,7 +91,7 @@ const ResumeContent = () => {
                   <p className="font-normal text-base mb-1 text-blue opacity-70">
                     {item.date}
                   </p>
-                  <p className="font-normal text-base mb-1 opacity-80">
+                  <span className="font-normal text-base mb-1 opacity-80">
                     <ul className="list-disc pl-5">
                       {item.description.map((detail, i) => (
                         <li key={i} className="p-2">
@@ -99,7 +99,7 @@ const ResumeContent = () => {
                         </li>
                       ))}
                     </ul>
-                  </p>
+                  </span>
                 </div>
               </li>
             ))}

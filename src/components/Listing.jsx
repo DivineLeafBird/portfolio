@@ -25,16 +25,16 @@ const Listing = () => {
   return (
     <>
       <section className="gradientBg text-tertiary px-5 py-20 max-w-screen-2xl mx-auto">
-        <h1 className="text-2xl font-semibold mt-5 mx-auto px-6 text-pink ">
+        <h1 className="text-2xl font-semibold md:px-8 mt-5 mx-auto  text-pink ">
           Projects
         </h1>
         <nav>
-          <ul className="flex justify-start  py-8">
+          <ul className="flex justify-start gap-4 md:px-4 md:gap-8 py-8">
             {filters.map(({ name, value }) => (
               <li key={value}>
                 <Link
                   onClick={() => handleFilterChange(value)}
-                  className={`cursor-pointer rounded-2xl px-4 py-1 ml-3 text-pink font-medium hover:bg-pink hover:text-primary ${
+                  className={`cursor-pointer rounded-2xl px-4 py-1  text-pink text-sm md:text-lg font-medium hover:bg-pink hover:text-primary ${
                     selectedFilter === value ? "text-blue" : ""
                   }`}
                 >
@@ -62,11 +62,13 @@ const Listing = () => {
                 // onClick={() => console.log("Project:", project)}
               >
                 <div className="bg-pink p-5 rounded-lg overflow-hidden shadow-md cursor-pointer hover:bg-gray-50 md:transition lg:duration-500 lg:ease-in-out lg:transform lg:hover:-translate-y-1 lg:hover:scale-110">
-                  <img
-                    className="object-cover"
-                    src={project.imgSrc}
-                    alt={project.name}
-                  ></img>
+                  <div>
+                    <img
+                      className="object-cover"
+                      src={project.imgSrc}
+                      alt={project.name}
+                    ></img>
+                  </div>
                   <span className=" text-secondary block font-medium mt-2">
                     {" "}
                     {project.name}
