@@ -71,8 +71,8 @@ const DeepDive = ({ project }) => {
           </div>
         </div>
       )}
-      <div className="container mx-auto space-y-4 mt-5">
-        <h2 className="text-2xl font-semibold">Project Details</h2>
+      <div className="container mx-auto space-y-4 mt-5 md:w-1/2">
+        <h2 className="text-2xl font-semibold text-center">Project Details</h2>
         <p className="flex items-center space-x-4">
           <span className="font-medium text-lg">Title:</span>{" "}
           <span className="text-base font-normal ">{project.name}</span>
@@ -135,9 +135,9 @@ const DeepDive = ({ project }) => {
             </a>
           </span>
         </p>
-        <p className="inline-block align-baseline space-x-4">
-          <span className="font-medium text-lg">Description:</span>{" "}
-          <span className="text-wrap  text-base font-normal ">
+        <p className="flex flex-col gap-4">
+          <span className="font-medium text-lg text-center">Description</span>{" "}
+          <span className="text-base/7 opacity-90 font-normal ">
             {project.description}
           </span>
         </p>

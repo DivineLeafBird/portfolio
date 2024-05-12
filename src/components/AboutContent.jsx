@@ -34,12 +34,12 @@ const AboutContent = () => {
                 key={index}
                 className="bg-pink rounded-lg flex flex-col items-center p-2"
               >
-                <h4 className="text-secondary font-medium lg:font-semibold lg:text-lg text-center p-2">
+                <h4 className="text-secondary text-lg md:text-xl   font-medium lg:font-semibold text-center p-2">
                   {item.title}
                   <hr className="border-indigo-700 opacity-50 transform translate-y-2" />
                 </h4>
 
-                <ul className="text-secondary font-light  lg:font-medium mt-2 text-xs lg:text-base flex flex-col items-center">
+                <ul className="text-secondary  text-[10px] md:text-sm lg:text-base font-light   mt-2 flex flex-col items-center">
                   {item.content.map((detail, i) => (
                     <li key={i} className="p-2">
                       <span>
@@ -53,7 +53,7 @@ const AboutContent = () => {
           </div>
 
           {/*profession cards start */}
-          <div className="grid grid-cols-1 gap-8 mt-5">
+          <div className="grid grid-cols-1 gap-8 mt-5 md:w-3/4 ">
             {Object.keys(rolesDetails).map((roleKey, index) => (
               <div key={index}>
                 {rolesDetails[roleKey].map((item, itemIndex) => (
@@ -61,23 +61,23 @@ const AboutContent = () => {
                     key={itemIndex}
                     className="bg-pink rounded-lg flex flex-col items-center  mx-auto p-2"
                   >
-                    <h4 className="text-secondary font-medium lg:font-semibold lg:text-lg text-center p-2">
+                    <h4 className="text-secondary font-medium lg:font-semibold text-lg md:text-xl   text-center p-2">
                       {item.title}
                       <hr className="border-indigo-700 opacity-50 transform translate-y-2" />
                     </h4>
-                    <p className="font-medium text-base md:text-lg text-center text-primary p-2">
-                      {item.qoute}
+                    <p className="font-normal text-xs md:text-sm lg:text-base text-center text-primary p-2">
+                      "{item.qoute}"
                     </p>
-                    <p className="font-normal md:font-medium text-base md:text-lg  text-secondary p-2">
+                    <p className="font-normal text-base lg:text-lg text-center p-2  text-secondary opacity-95">
                       {item.intro}
                     </p>
-                    <p className="font-normal md:font-medium text-base md:text-lg  text-secondary p-2">
+                    <p className="font-normal text-base/7 lg:text-lg  text-secondary p-2">
                       <strong className="text-primary">
                         Professional Experience:
                       </strong>{" "}
                       {item.experience}
                     </p>
-                    <p className="font-normal md:font-medium text-base md:text-lg  text-secondary p-2">
+                    <p className="font-normal  text-base/7 lg:text-lg  text-secondary p-2">
                       <strong className="text-primary">
                         Skills and Expertise:
                       </strong>{" "}
