@@ -1,8 +1,8 @@
 import React from "react";
 import Venpic from "../assets/venpic.png";
 import Purpletray from "../assets/purpletray.png";
-import Foodie from "../assets/foodie.png";
-
+import Foodie4 from "../assets/foodie4.png";
+import Portfolio from "../assets/portfolio.png";
 const ProjectGrid = () => {
   const projects = [
     {
@@ -16,14 +16,14 @@ const ProjectGrid = () => {
       name: "Purpletray",
     },
     {
-      imgSrc: Foodie,
+      imgSrc: Foodie4,
       tech: ["Mobile", "UX/UI", "Figma"],
       name: "Foodie App",
     },
     {
-      imgSrc: Venpic,
-      tech: ["Web", "Laravel", "PHP"],
-      name: "Venpic Agencies",
+      imgSrc: Portfolio,
+      tech: ["Web", "React", "JavaScript"],
+      name: "Portfolio",
     },
     {
       imgSrc: Purpletray,
@@ -42,25 +42,29 @@ const ProjectGrid = () => {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="bg-pink p-5 rounded-lg overflow-hidden shadow-md"
+                className="bg-pink   p-5 rounded-lg overflow-hidden shadow-md "
               >
-                <img
-                  className="w-full h-50 object-cover"
-                  src={project.imgSrc}
-                  alt={project.name}
-                />
-                <span className=" text-secondary font-medium block text-center mt-2">
-                  {project.name}
-                </span>
-                <div className="mt-2 flex justify-between">
-                  {project.tech.map((tech, index) => (
-                    <span
-                      key={index}
-                      className="inline-block  text-secondary border-2 border-secondary rounded-full px-2 py-1 text-xs font-normal md:space-x-2 mr-2"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                <div className="md:h-36 lg:h-40">
+                  <img
+                    className="w-full h-full object-cover md:object-fill"
+                    src={project.imgSrc}
+                    alt={project.name}
+                  />
+                </div>
+                <div>
+                  <span className=" text-secondary font-medium block text-center mt-2">
+                    {project.name}
+                  </span>
+                  <div className="mt-2 flex justify-between">
+                    {project.tech.map((tech, index) => (
+                      <span
+                        key={index}
+                        className="inline-block  text-secondary border-2 border-secondary rounded-full px-2 py-1 text-[8px] xl:text-xs font-normal md:space-x-2"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}

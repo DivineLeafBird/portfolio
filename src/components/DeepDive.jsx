@@ -85,21 +85,23 @@ const DeepDive = ({ project }) => {
           <span className="font-medium text-lg">Role:</span>{" "}
           <span className="text-base font-normal ">{project.role}</span>
         </p>
-        <p className="flex items-center space-x-4">
-          <span className="font-medium text-lg">Tech Stack</span>{" "}
-        </p>
         <p className="flex items-stretch space-x-4">
           <span className="font-normal text-lg inline-flex">Front-end: </span>
           <span className="grid grid-cols-2 gap-1 text-center md:flex md:items-center space-x-2 text-xs md:text-base font-normal ">
             {project &&
-              project.frontEnd.map((tech, index) => (
-                <span
-                  key={index}
-                  className="bg-[#FB503B] rounded-2xl px-4 py-1"
-                >
-                  {tech}
-                </span>
-              ))}
+              project.frontEnd &&
+              project.frontEnd.length > 0 &&
+              project.frontEnd.map(
+                (tech, index) =>
+                  tech !== "" && (
+                    <span
+                      key={index}
+                      className="bg-[#FB503B] rounded-2xl px-4 py-1"
+                    >
+                      {tech}
+                    </span>
+                  )
+              )}
           </span>
         </p>
         <p className="flex items-stretch space-x-4">
@@ -122,7 +124,7 @@ const DeepDive = ({ project }) => {
           </span>
         </p>
         <p className="flex items-center space-x-4">
-          <span className="font-medium text-lg">Github:</span>{" "}
+          <span className="font-medium text-lg">Repository:</span>{" "}
           <span className="text-base font-normal  ">
             <a
               href={project.githubLink}
@@ -131,7 +133,8 @@ const DeepDive = ({ project }) => {
               rel="noopener noreferrer"
             >
               {" "}
-              <AiOutlineLink /> repository
+              <AiOutlineLink />
+              {""} {project.name}
             </a>
           </span>
         </p>

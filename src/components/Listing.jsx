@@ -62,16 +62,19 @@ const Listing = () => {
                 // onClick={() => console.log("Project:", project)}
               >
                 <div className="bg-pink p-5 rounded-lg overflow-hidden shadow-md cursor-pointer hover:bg-gray-50 md:transition lg:duration-500 lg:ease-in-out lg:transform lg:hover:-translate-y-1 lg:hover:scale-110">
-                  <div>
+                  <div className="flex items-center justify-center">
                     <img
-                      className="object-cover"
+                      className="object-cover max-h-40 "
                       src={project.imgSrc}
                       alt={project.name}
                     ></img>
                   </div>
                   <span className=" text-secondary block font-medium mt-2">
                     {" "}
-                    {project.name}
+                    {project.name} -{" "}
+                    <span className="font-normal text-xs md:text-sm">
+                      ({project.task})
+                    </span>
                   </span>
                   <span className=" text-secondary block font-normal mt-2">
                     {" "}
