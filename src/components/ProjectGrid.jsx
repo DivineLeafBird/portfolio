@@ -22,13 +22,13 @@ const ProjectGrid = () => {
     },
     {
       imgSrc: Portfolio,
-      tech: ["Web", "React", "JavaScript"],
+      tech: ["Web", "UX/UI", "Figma"],
       name: "Portfolio",
     },
     {
-      imgSrc: Purpletray,
+      imgSrc: Portfolio,
       tech: ["Web", "React", "JavaScript"],
-      name: "Purpletray",
+      name: "Portfolio",
     },
   ];
   return (

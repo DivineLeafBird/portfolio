@@ -55,7 +55,7 @@ const projectDetails = [
     task: "Frontend",
     platform: "Web",
     role: "Software Engineer",
-    tech: ["React", "Node.js", "Redux"],
+    tech: ["React", "Node.js", "Vite"],
     frontEnd: ["HTML", "JavaScript", "Tailwind CSS"],
     backEnd: [""],
     images: [Purpletray],
@@ -78,7 +78,7 @@ const projectDetails = [
     category: "web",
     description:
       "Developed web application of the Venpic design that  simplifies the rental search for tenants. Tenants can browse listings with detailed filters, explore properties with virtual tours, and manage applications electronically. The agency can create professional listings, target ideal tenants, manage applications, and collect rent seamlessly - all within one user-friendly web app. Find your perfect place or fill your vacancy effortlessly with Venpic.",
-    githubLink: "https://github.com/DivineLeafBird/rentals",
+    githubLink: "https://github.com/DivineLeafBird/rental-homes",
   },
   {
     id: 5,
@@ -121,7 +121,7 @@ const projectDetails = [
     task: "Frontend",
     platform: "Web",
     role: "Software Engineer",
-    tech: ["React", "Node.js", "Redux"],
+    tech: ["React", "Node.js", "Vite"],
     frontEnd: ["HTML", "Tailwind CSS", "JavaScript"],
     backEnd: [""],
     images: [Portfolio, Portfolio2, Portfolio3],
