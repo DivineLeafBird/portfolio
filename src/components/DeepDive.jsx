@@ -134,7 +134,7 @@ const DeepDive = ({ project }) => {
             >
               {" "}
               <AiOutlineLink />
-              {""} {project.name}
+              {""} visit project
             </a>
           </span>
         </p>
