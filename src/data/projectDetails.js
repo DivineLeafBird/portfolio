@@ -12,6 +12,7 @@ import CoffeeStar2 from "../assets/coffeestar2.jpeg";
 import Portfolio from "../assets/portfolio.png";
 import Portfolio2 from "../assets/portfolio2.png";
 import Portfolio3 from "../assets/portfolio3.png";
+import Renkla from "../assets/renkla.png";
 
 const projectDetails = [
   {
@@ -129,6 +130,22 @@ const projectDetails = [
     description:
       "Developed my personal portfolio website using React, Tailwind CSS, and Node.js. The web application showcases my projects, skills, and experiences as a software engineer and UX / UI designer. The website is designed to be responsive and user-friendly, providing visitors with an easy way to navigate through my work and get in touch with me.",
     githubLink: "https://github.com/DivineLeafBird/portfolio",
+  },
+  {
+    id: 8,
+    imgSrc: Renkla,
+    name: "Renkla",
+    task: "Design",
+    platform: "Mobile",
+    role: "UX / UI Designer",
+    tech: ["Figma", "Figjam", "UX / UI"],
+    frontEnd: [""],
+    backEnd: [""],
+    images: [Renkla],
+    category: "design",
+    description:
+      "A design concept for a fashion e-commerce mobile app. Renkla is designed for fashion enthusiasts who want to discover the latest trends, shop for stylish outfits, and get inspired by fashion influencers. The app offers a wide range of clothing items, accessories, and beauty products from top brands, all with the convenience of shopping on your phone. Renkla is your ultimate destination for all things fashion.",
+    githubLink: "https://www.figma.com/proto/h4I8n7vZa2g4uzw4NPZLoP/Renkla?node-id=12-123&starting-point-node-id=19%3A1556&t=VxmHVkep6GZntXaG-1",
   },
 ];
 

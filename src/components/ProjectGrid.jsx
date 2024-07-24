@@ -3,6 +3,8 @@ import Venpic from "../assets/venpic.png";
 import Purpletray from "../assets/purpletray.png";
 import Foodie4 from "../assets/foodie4.png";
 import Portfolio from "../assets/portfolio.png";
+import Renkla from "../assets/renkla.png";
+
 const ProjectGrid = () => {
   const projects = [
     {
@@ -22,13 +24,13 @@ const ProjectGrid = () => {
     },
     {
       imgSrc: Portfolio,
-      tech: ["Web", "UX/UI", "Figma"],
+      tech: ["Web", "React", "JavaScript"],
       name: "Portfolio",
     },
     {
-      imgSrc: Portfolio,
-      tech: ["Web", "React", "JavaScript"],
-      name: "Portfolio",
+      imgSrc: Renkla,
+      tech: ["Mobile", "UX/UI", "Figma"],
+      name: "Renkla",
     },
   ];
   return (
