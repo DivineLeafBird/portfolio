@@ -5,14 +5,13 @@ import rolesDetails from "../data/rolesDetails";
 const AboutContent = () => {
   const background = [
     {
-      title: "Personal Information & Background",
+      title: "Personal Background",
       content: [
         "Name: Kassim Yahya Ali",
-        "Age: 24 Years",
-        "Physical Address: Kilifi, Kenya",
+        "Age: 25 Years",
         "Postal Address: 88240-80100 Mombasa, Kenya",
         "Highest Education: BSc, Information Technology",
-        "Professions: Software Engineer, IT Support Specialist, UX/UI Designer",
+        "Professions: Software Engineer, IT Support Specialist, UX/UI Designer, Data Analyst",
       ],
     },
   ];

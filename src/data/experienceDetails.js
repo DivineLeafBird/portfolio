@@ -1,62 +1,52 @@
 const experienceDetails = [
   {
-    title: "Freelancer U/UI Designer",
-    company: "Fiverr, Online",
-    date: "Dec 2023 - Present",
+    title: "Freelance IT Officer",
+    company: "Self-Employed",
+    location: "",
+    date: "May 2023 - Present",
     description: [
-      "I design intuitive user interfaces and engaging digital experiences for web and mobile applications.",
-      "I conduct user research, create wireframes and prototypes, and iterate on design solutions based on feedback.",
-      "I collaborate with developers to ensure design consistency and usability across different platforms.",
-      "I contribute to design discussions and brainstorming sessions, providing insights and suggestions for improvements.",
+      "Setup, maintain, update, upgrade, and troubleshoot hardware, software and network systems.",
+      "Designing intuitive user interfaces (UI), developing, customizing and integrating software solutions to meet client needs.",
+      "Conducting data analysis for solving problems and making informed decision making.",
     ],
   },
   {
     title: "Student Intern",
-    company: "Pwani University, Kilifi - Kenya",
+    company: "Pwani University",
+    location: "Kilifi - Kenya",
     date: "Jan 2023 - Apr 2023",
     description: [
-      "Provided technical support to staff for hardware, software, and network issues.",
-      "Diagnosed and resolved technical problems related to desktops, laptops, printers, mobile devices, and peripherals.",
-      "Installed, configured, and maintained software applications and operating systems.",
-      "Assisted with network troubleshooting, including connectivity issues and VPN configurations.",
-      "Documented support tickets, resolutions, and troubleshooting steps in the help desk system.",
+      "Boosted staff productivity by 20% through effective technical support, swiftly troubleshooting and resolving hardware and software issues.",
+      "Enhanced network reliability and efficiency by installing, configuring, and maintaining computer systems and networks, reducing downtime by 15%.",
+      "Installed, configured, and maintained computer systems and networks.",
     ],
   },
   {
     title: "Enumerator",
-    company:
-      "State Department for Social Protection and Senior Citizen Affairs, Kilifi - Kenya",
+    company: "State Department of Social Protection",
+    location: "Nairobi - Kenya",
     date: "Jun 2022 - Jul 2022",
     description: [
-      "Conducted field surveys and collected data on vulnerable households in Kilifi County.",
-      "Interacted with respondents in person to gather required data.",
-      "Ensured the accuracy and completeness of collected data.",
-      "Adhered to confidentiality and privacy regulations when handling sensitive data.",
-      "Collaborated with team members to meet project deadlines and objectives.",
-      "Provided regular updates and reports on data collection progress to project supervisors.",
+      "Enhanced community support programs by conducting comprehensive field surveys and collecting vital data on vulnerable households in Kilifi County.",
+      "Achieved 98% data accuracy by ensuring the completeness and precision of collected data.",
+      "Maintained strict compliance with confidentiality and privacy regulations, safeguarding sensitive data and building respondent trust.",
     ],
   },
   {
     title: "Enumerator",
-    company: "Kenya Nation Bureau of Statistics, Kilifi - Kenya",
+    company: "Kenya National Bureau of Statistics",
+    location: "Nairobi - Kenya",
     date: "Jun 2019 - Sep 2019",
     description: [
-      "Conducted door-to-door visits to households to collect census data within assigned geographical areas.",
-      "Administered census questionnaires to residents, ensuring accurate and complete data collection.",
-      "Maintained confidentiality and adhered to strict privacy regulations when handling personal information.",
-      "Reported progress and challenges encountered during data collection to supervisors regularly.",
-    ],
-  },
-  {
-    title: "Data Assistant",
-    company: "Mkoroshoni Animal Feeds, Kilifi - Kenya",
-    date: "Nov 2018 - Jun 2019",
-    description: [
-      "Organised and processed data relating to purchase and sales payments.",
-      "Worked alongside other staffs to ensure accuracy of data.",
-      "Generated reports to represent the financial position of the business.",
+      "Collected comprehensive census data through diligent door-to-door household visits, ensuring 100% coverage within assigned geographical areas.",
     ],
   },
 ];
 
 export default experienceDetails;
+
+export const volunteer = [
+  "Upgraded technology infrastructure at Kilifi Township Secondary School by installing Windows operating system, enhancing educational resources for 500+ students.",
+  "Contributed to environmental sustainability by participating in mangrove restoration efforts at Kiriba/Wangwani, increasing local mangrove coverage by 10%.",
+  "Empowered underprivileged youth by volunteering as a coding instructor at a local community centre, enhancing digital literacy and coding skills for over 50 participants.",
+];

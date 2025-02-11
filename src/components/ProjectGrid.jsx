@@ -36,16 +36,13 @@ const ProjectGrid = () => {
   return (
     <>
       <section className="gradientBg text-tertiary px-5 py-10 max-w-screen-2xl mx-auto ">
-        <h2 className="text-2xl text-tertiary font-semibold pb-8 ml-5 text-center md:text-left">
+        <h2 className="flex items-center justify-center text-tertiary font-semibold text-2xl pb-20 ">
           Projects
         </h2>
         <div className="animate-scroll">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:flex lg:flex-row lg:overflow-clip gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:flex lg:flex-row lg:overflow-clip gap-8 ">
             {projects.map((project, index) => (
-              <div
-                key={index}
-                className="bg-pink   p-5 rounded-lg overflow-hidden shadow-md "
-              >
+              <div key={index} className="bg-pink p-5 rounded-lg shadow-lg ">
                 <div className="md:h-36 lg:h-40">
                   <img
                     className="w-full h-full object-cover md:object-fill"
@@ -53,7 +50,7 @@ const ProjectGrid = () => {
                     alt={project.name}
                   />
                 </div>
-                <div>
+                {/* <div>
                   <span className=" text-secondary font-medium block text-center mt-2">
                     {project.name}
                   </span>
@@ -67,7 +64,7 @@ const ProjectGrid = () => {
                       </span>
                     ))}
                   </div>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>

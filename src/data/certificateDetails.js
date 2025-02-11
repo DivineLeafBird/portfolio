@@ -19,20 +19,5 @@ const certificateDetails = [
     school: "Kilifi Collage of Accountancy",
     date: "Mar 2021",
   },
-  {
-    title: "Corporate career",
-    school: "Aiducation International",
-    date: "Jul 2019",
-  },
-  {
-    title: "Start-ups",
-    school: "Aiducation International",
-    date: "Mar 2019",
-  },
-  {
-    title: "Financial literacy",
-    school: "Aiducation International",
-    date: "Apr 2019",
-  },
 ];
 export default certificateDetails;

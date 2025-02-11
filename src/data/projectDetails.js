@@ -27,6 +27,8 @@ const projectDetails = [
     backEnd: [""],
     images: [Foodie5, Foodie, Foodie2, Foodie3, Foodie4, Foodie6],
     category: "design",
+    intro:
+      "An Intuitive design of a Food Ordring App for a take-out restaurant.",
     description:
       "Foodie is a food ordering app designed for individuals who want a quick and convenient way to get delicious takeout meals. The app offers a wide variety of cuisines to choose from, all with the ability to order for pickup or delivery. Foodie is  your ultimate solution for satisfying your cravings with just a few taps on your phone. Whether you're in the mood for mouthwatering pasta, spicy curry, or a classic burger, Foodie has got you covered with its extensive variety of cuisines.",
     githubLink:
@@ -44,6 +46,7 @@ const projectDetails = [
     backEnd: [""],
     images: [Venpic, Venpic2],
     category: "design",
+    intro: "UX design of a Real-Estate property managment system.",
     description:
       "A design concept of Venpic a web application to simplify the rental search for tenants. Tenants can browse listings with detailed filters, explore properties with virtual tours, and manage applications electronically. The agency can create professional listings, target ideal tenants, manage applications, and collect rent seamlessly - all within one user-friendly web app. Find your perfect place or fill your vacancy effortlessly with Venpic.",
     githubLink:
@@ -61,6 +64,8 @@ const projectDetails = [
     backEnd: [""],
     images: [Purpletray],
     category: "web",
+    intro:
+      "Practical example of (Single Page Application (SPA) with Framer motion animations using React.",
     description:
       "Purpletray is a web application for student tutoring. Get matched with experienced tutors who specialize in your area of interest. Whether it's programming, language learning, music, or any other skill, our tutors provide personalized lesson plans and tailored learning strategies to help you achieve your goals. Purpletray is your one-stop solution for finding the perfect tutor to help you reach your full potential.",
     githubLink: "https://github.com/DivineLeafBird/react-project-purpletray",
@@ -77,6 +82,7 @@ const projectDetails = [
     backEnd: ["Laravel", "PHP", "MySQL"],
     images: [Venpic, Venpic2],
     category: "web",
+    intro: "Implementation of the Real-Estate property managment system. ",
     description:
       "Developed web application of the Venpic design that  simplifies the rental search for tenants. Tenants can browse listings with detailed filters, explore properties with virtual tours, and manage applications electronically. The agency can create professional listings, target ideal tenants, manage applications, and collect rent seamlessly - all within one user-friendly web app. Find your perfect place or fill your vacancy effortlessly with Venpic.",
     githubLink: "https://github.com/DivineLeafBird/rental-homes",
@@ -93,6 +99,7 @@ const projectDetails = [
     backEnd: [""],
     images: [CoffeeStar, CoffeeStar2],
     category: "design",
+    intro: "A design challenge of a Coffee Ordering App.",
     description:
       "Coffee Star is a mobile app designed for coffee lovers who want to  order their favorite drinks with ease. The app provides a user-friendly interface that allows users to explore coffee menus, and place orders for pickup or delivery. Coffee Star is your go-to app for finding your favorite drinks wherever you are.",
     githubLink:
@@ -110,6 +117,7 @@ const projectDetails = [
     backEnd: [""],
     images: [Portfolio, Portfolio2, Portfolio3],
     category: "design",
+    intro: "Portfolio UX design.",
     description:
       "A design concept of my portfolio web application. A place to showcase my projects, skills, and experiences as a software engineer and UX / UI designer. The web app is designed to be responsive and user-friendly, providing visitors with an easy way to navigate through my work and get in touch. The website is designed to be visually appealing and engaging, with a focus on clean, modern design and intuitive user experience.",
     githubLink:
@@ -127,6 +135,7 @@ const projectDetails = [
     backEnd: [""],
     images: [Portfolio, Portfolio2, Portfolio3],
     category: "web",
+    intro: "Implementation of the portfolio UX design.",
     description:
       "Developed my personal portfolio website using React, Tailwind CSS, and Node.js. The web application showcases my projects, skills, and experiences as a software engineer and UX / UI designer. The website is designed to be responsive and user-friendly, providing visitors with an easy way to navigate through my work and get in touch with me.",
     githubLink: "https://github.com/DivineLeafBird/portfolio",
@@ -143,9 +152,11 @@ const projectDetails = [
     backEnd: [""],
     images: [Renkla],
     category: "design",
+    intro: "Apparel store UX design. For fashion enthusiats.",
     description:
       "A design concept for a fashion e-commerce mobile app. Renkla is designed for fashion enthusiasts who want to discover the latest trends, shop for stylish outfits, and get inspired by fashion influencers. The app offers a wide range of clothing items, accessories, and beauty products from top brands, all with the convenience of shopping on your phone. Renkla is your ultimate destination for all things fashion.",
-    githubLink: "https://www.figma.com/proto/h4I8n7vZa2g4uzw4NPZLoP/Renkla?node-id=12-123&starting-point-node-id=19%3A1556&t=VxmHVkep6GZntXaG-1",
+    githubLink:
+      "https://www.figma.com/proto/h4I8n7vZa2g4uzw4NPZLoP/Renkla?node-id=12-123&starting-point-node-id=19%3A1556&t=VxmHVkep6GZntXaG-1",
   },
 ];
 

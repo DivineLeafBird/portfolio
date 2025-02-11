@@ -4,18 +4,18 @@ import { MdRadioButtonChecked, MdVolunteerActivism } from "react-icons/md";
 import { TbCertificate } from "react-icons/tb";
 import { IoBulb, IoLanguage } from "react-icons/io5";
 import education from "../data/educationDetails";
-import experience from "../data/experienceDetails";
+import experience, { volunteer } from "../data/experienceDetails";
 import certificates from "../data/certificateDetails";
 import skills from "../data/skillsDetails";
 const ResumeContent = () => {
-  const volunteer = [
-    "Windows installation on new Desktop computers at Kilifi Township Secondary School.",
-    "Mangrove restoration at Kiriba / Wangwani.",
-    "Volunteer as a coding instructor at a local community center to teach coding skills to underprivileged youth.",
-  ];
+  // const volunteer = [
+  //   "Windows installation on new Desktop computers at Kilifi Township Secondary School.",
+  //   "Mangrove restoration at Kiriba / Wangwani.",
+  //   "Volunteer as a coding instructor at a local community center to teach coding skills to underprivileged youth.",
+  // ];
   return (
     <>
-      <section className="gradientBg text-tertiary px-5 py-20 max-w-screen-2xl mx-auto min-h-screen">
+      <section className="gradientBg text-tertiary items-center justify-center px-48 py-20 min-h-screen">
         <h1 className="text-3xl font-semibold mt-5  text-pink ">Resume</h1>
         {/* Education Timeline */}
         <div className="container xl:translate-x-4 mt-5">
@@ -45,13 +45,11 @@ const ResumeContent = () => {
                 <div className="text-tertiary">
                   <h4 className="font-medium text-xl mb-1">{item.title}</h4>
                   <p className="font-normal text-lg mb-1 opacity-80">
-                    {item.school}
+                    {item.school},{" "}
+                    <span className="text-stone-300"> {item.location} </span>
                   </p>
                   <p className="font-normal text-base mb-1 text-blue opacity-70">
                     {item.date}
-                  </p>
-                  <p className="font-normal text-base mb-1 opacity-80">
-                    {item.description}
                   </p>
                 </div>
               </li>
@@ -86,7 +84,8 @@ const ResumeContent = () => {
                 <div className="text-tertiary">
                   <h4 className="font-medium text-xl mb-1">{item.title}</h4>
                   <p className="font-normal text-lg mb-1 opacity-80">
-                    {item.company}
+                    {item.company},
+                    <span className="text-stone-300"> {item.location} </span>
                   </p>
                   <p className="font-normal text-base mb-1 text-blue opacity-70">
                     {item.date}

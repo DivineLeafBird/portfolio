@@ -69,26 +69,29 @@ const Listing = () => {
                       alt={project.name}
                     ></img>
                   </div>
-                  <span className=" text-secondary block font-medium mt-2">
+                  <span className=" text-secondary mb-8 block font-medium mt-2">
                     {" "}
                     {project.name} -{" "}
                     <span className="font-normal text-xs md:text-sm">
                       ({project.task})
                     </span>
                   </span>
-                  <span className=" text-secondary block font-normal mt-2">
+                  {/* <span className=" text-secondary block font-normal text-xs mt-2">
                     {" "}
                     {project.platform}
-                  </span>
-                  <div className="mt-2 flex flex-wrap">
+                  </span> */}
+                  <div className="mt-2 flex flex-wrap items-center justify-between ">
                     {project.tech.map((tech, index) => (
                       <span
                         key={index}
-                        className=" text-secondary px-1 py-1 text-xs font-normal mr-2"
+                        className=" text-secondary  py-1 text-xs font-normal bg-purple-100 px-2 rounded-2xl mr-2"
                       >
                         {tech}
                       </span>
                     ))}
+                  </div>
+                  <div className="mt-8 text-secondary flex flex-wrap">
+                    {project.intro}
                   </div>
                 </div>
               </Link>
