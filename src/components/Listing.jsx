@@ -35,7 +35,7 @@ const Listing = () => {
                 <Link
                   onClick={() => handleFilterChange(value)}
                   className={`cursor-pointer rounded-2xl px-4 py-1  text-pink text-sm md:text-lg font-medium hover:bg-pink hover:text-primary ${
-                    selectedFilter === value ? "text-blue" : ""
+                    selectedFilter === value ? "bg-blue/50" : ""
                   }`}
                 >
                   {name}

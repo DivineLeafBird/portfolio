@@ -15,7 +15,7 @@ const ResumeContent = () => {
   // ];
   return (
     <>
-      <section className="gradientBg text-tertiary items-center justify-center px-48 py-20 min-h-screen">
+      <section className="gradientBg text-tertiary items-center justify-center px-4 lg:px-48 py-20 min-h-screen">
         <h1 className="text-3xl font-semibold mt-5  text-pink ">Resume</h1>
         {/* Education Timeline */}
         <div className="container xl:translate-x-4 mt-5">
@@ -114,7 +114,7 @@ const ResumeContent = () => {
               <h3>Volunteer</h3>
             </div>
           </div>
-          <div>
+          <div className="text-tertiary px-16">
             <ul className="list-disc pl-5">
               {volunteer.map((item, index) => (
                 <li key={index} className="p-2">
@@ -134,7 +134,7 @@ const ResumeContent = () => {
               <h3>Certificates</h3>
             </div>
           </div>
-          <div>
+          <div className="text-tertiary px-16">
             <ul className="list-disc pl-5">
               {certificates.map((item, index) => (
                 <li key={index} className="p-2">
@@ -157,7 +157,7 @@ const ResumeContent = () => {
               <h3>Languages</h3>
             </div>
           </div>
-          <div>
+          <div className="text-tertiary px-16">
             <ul className="list-disc pl-5">
               <li className="p-2">English - Proficient</li>
               <li className="p-2">Swahili - Native</li>

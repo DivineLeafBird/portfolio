@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { AiOutlineLink } from "react-icons/ai";
+import { IoChevronBackOutline, IoChevronForwardOutline } from "react-icons/io5";
 
 const DeepDive = ({ project }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -25,7 +26,7 @@ const DeepDive = ({ project }) => {
       {project && project.images && project.images.length > 0 && (
         <div className="container mx-auto md:w-1/2 mt-5">
           <div className="relative rounded-xl overflow-hidden">
-            <div className="carousel ">
+            <div className="carousel mx-8 ">
               {project.images.map(
                 (image, index) =>
                   image !== "" && (
@@ -42,18 +43,19 @@ const DeepDive = ({ project }) => {
             </div>
 
             <div className="flex items-center justify-between">
-              <button
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 text-gray-800 hover:bg-opacity-75 rounded-full p-3  outline-none"
+              <div
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white/20  hover:bg-pink/50 rounded-full p-4 outline-none"
                 onClick={handlePrev}
               >
-                &lt;
-              </button>
-              <button
-                className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 text-gray-800 hover:bg-opacity-75 rounded-full p-3  outline-none"
+                <IoChevronBackOutline className="w-6 h-6 text-white" />
+              </div>
+
+              <div
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white/20  hover:bg-pink/50 rounded-full p-4 outline-none"
                 onClick={handleNext}
               >
-                &gt;
-              </button>
+                <IoChevronForwardOutline className="w-6 h-6 text-white" />
+              </div>
             </div>
             <div className="absolute bottom-4 left-0 w-full flex justify-center">
               <div className="flex gap-2">
@@ -85,44 +87,25 @@ const DeepDive = ({ project }) => {
           <span className="font-medium text-lg">Role:</span>{" "}
           <span className="text-base font-normal ">{project.role}</span>
         </p>
-        <p className="flex items-stretch space-x-4">
-          <span className="font-normal text-lg inline-flex">Front-end: </span>
-          <span className="grid grid-cols-2 gap-1 text-center md:flex md:items-center space-x-2 text-xs md:text-base font-normal ">
+        <div className="flex-col items-center justify-center space-x-4">
+          <p className="font-medium text-lg">Tools & Technologies: </p>
+          <div className="flex flex-wrap gap-2 py-4 items-center justify-start text-xs md:text-base font-normal ">
             {project &&
-              project.frontEnd &&
-              project.frontEnd.length > 0 &&
-              project.frontEnd.map(
+              project.stack &&
+              project.stack.length > 0 &&
+              project.stack.map(
                 (tech, index) =>
                   tech !== "" && (
                     <span
                       key={index}
-                      className="bg-[#FB503B] rounded-2xl px-4 py-1"
+                      className="bg-blue/40 text-nowrap rounded-2xl px-4 py-1"
                     >
                       {tech}
                     </span>
                   )
               )}
-          </span>
-        </p>
-        <p className="flex items-stretch space-x-4">
-          <span className="font-normal text-lg inline-flex">Back-end: </span>
-          <span className="grid grid-cols-2 gap-1 text-center md:flex md:items-center space-x-2 text-xs md:text-base font-normal ">
-            {project &&
-              project.backEnd &&
-              project.backEnd.length > 0 &&
-              project.backEnd.map(
-                (tech, index) =>
-                  tech !== "" && (
-                    <span
-                      key={index}
-                      className="bg-[#FB503B] rounded-2xl px-4 py-1 "
-                    >
-                      {tech}
-                    </span>
-                  )
-              )}
-          </span>
-        </p>
+          </div>
+        </div>
         <p className="flex items-center space-x-4">
           <span className="font-medium text-lg">Repository:</span>{" "}
           <span className="text-base font-normal  ">
