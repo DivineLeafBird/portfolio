@@ -49,23 +49,20 @@ const ProjectGrid = () => {
 
   return (
     <>
-      <section className="gradientBg text-tertiary px-5 py-10 max-w-screen-2xl mx-auto ">
+      <section className=" hidden lg:block gradientBg text-tertiary px-5 py-10 max-w-screen-2xl mx-auto ">
         <h2 className="flex items-center justify-center text-tertiary font-semibold text-2xl pb-20 ">
           Projects
         </h2>
         <div className="animate-scroll">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:flex lg:flex-row lg:overflow-clip gap-8 ">
             {projects.map((project, index) => (
-              <div
-                key={index}
-                className="bg-pink p-5 rounded-lg shadow-lg cursor-pointer "
-              >
+              <div key={index} className="bg-pink p-5 rounded-lg shadow-lg ">
                 <div className="md:h-36 lg:h-40">
                   <img
                     className="w-full h-full object-cover md:object-fill"
                     src={project.imgSrc}
                     alt={project.name}
-                    onClick={() => handleClick(project.link)}
+                    // onClick={() => handleClick(project.link)}
                   />
                 </div>
                 {/* <div>
