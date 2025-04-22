@@ -106,27 +106,27 @@ const DeepDive = ({ project }) => {
               )}
           </div>
         </div>
-        <p className="flex items-center space-x-4">
-          <span className="font-medium text-lg">Repository:</span>{" "}
-          <span className="text-base font-normal  ">
+        <div className="flex items-center space-x-4">
+          <p className="font-medium text-lg">Repository:</p>{" "}
+          <div className="text-base font-normal hover:text-blue transition-all duration-300">
             <a
               href={project.githubLink}
-              className="flex items-center"
+              className="flex items-center gap-2"
               target="_blank"
               rel="noopener noreferrer"
             >
               {" "}
               <AiOutlineLink />
-              {""} visit project
+              <span>visit project</span>
             </a>
-          </span>
-        </p>
-        <p className="flex flex-col gap-4">
-          <span className="font-medium text-lg text-center">Description</span>{" "}
-          <span className="text-base/7 opacity-90 font-normal ">
+          </div>
+        </div>
+        <div className="flex-col items-center justify-center">
+          <p className="font-medium text-lg">Description:</p>{" "}
+          <p className="text-base/7 opacity-90 font-normal pt-4 ">
             {project.description}
-          </span>
-        </p>
+          </p>
+        </div>
       </div>
     </section>
   );
