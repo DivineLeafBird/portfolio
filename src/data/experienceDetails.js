@@ -1,13 +1,15 @@
 const experienceDetails = [
   {
-    title: "Freelance IT Officer",
-    company: "Self-Employed",
-    location: "",
-    date: "May 2023 - Present",
+    title: "IT Officer",
+    company: "Pinless Communication Limited",
+    location: "Kilifi - Kenya",
+    date: "March 2025 - Present",
     description: [
+      "Assisting users with account creation, password resets, and access issues.",
+      "logging all support interactions in the ticketing system to maintain a record of issues and resolutions.",
       "Setup, maintain, update, upgrade, and troubleshoot hardware, software and network systems.",
-      "Designing intuitive user interfaces (UI), developing, customizing and integrating software solutions to meet client needs.",
-      "Conducting data analysis for solving problems and making informed decision making.",
+      "Monitoring and reporting on system performance, security, and availability.",
+      "Ensuring compliance with IT policies and procedures.",
     ],
   },
   {
