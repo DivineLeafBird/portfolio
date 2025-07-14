@@ -1,5 +1,5 @@
 import React from "react";
-import Kassim from "../assets/kassim-1.png";
+import Kassim from "../assets/kassim.png";
 import rolesDetails from "../data/rolesDetails";
 
 const AboutContent = () => {
