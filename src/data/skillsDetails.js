@@ -1,11 +1,11 @@
 const skillsDetails = [
   {
-    title: "Operating Systems",
-    percentage: 81,
+    title: "IT Support",
+    percentage: 98,
   },
   {
     title: "System Administration",
-    percentage: 64,
+    percentage: 74,
   },
   {
     title: "Network Administration",
@@ -29,7 +29,7 @@ const skillsDetails = [
   },
   {
     title: "Cloud Computing",
-    percentage: 63,
+    percentage: 67,
   },
   {
     title: "Problem Solving",
@@ -37,7 +37,7 @@ const skillsDetails = [
   },
   {
     title: "JavaScript ",
-    percentage: 65,
+    percentage: 75,
   },
   {
     title: "React.js",
@@ -45,11 +45,11 @@ const skillsDetails = [
   },
   {
     title: "React Native",
-    percentage: 30,
+    percentage: 80,
   },
   {
     title: "Node.js",
-    percentage: 45,
+    percentage: 83,
   },
   {
     title: "HTML",
@@ -65,7 +65,7 @@ const skillsDetails = [
   },
   {
     title: "MongoDB",
-    percentage: 41,
+    percentage: 72,
   },
   {
     title: "Figma",
@@ -81,7 +81,7 @@ const skillsDetails = [
   },
   {
     title: "Data Analysis",
-    percentage: 56,
+    percentage: 75,
   },
   {
     title: "Self-Motivation",
@@ -93,7 +93,7 @@ const skillsDetails = [
   },
   {
     title: "Artificial Intelligence",
-    percentage: 45,
+    percentage: 76,
   },
   {
     title: "Microsoft Office Suite",
