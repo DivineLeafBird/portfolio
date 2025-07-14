@@ -1,20 +1,20 @@
 const experienceDetails = [
-  {
-    title: "Customer Support Representative (SAF Franchise) ",
-    company: "Pinless Communication Limited",
-    location: "Kilifi - Kenya",
-    date: "March 2025 - Present",
-    description: [
-      "Processed mobile money transactions, including cash deposits, withdrawals, and fund transfers with accuracy and attention to detail.",
-      "Handled SIM replacements, new SIM activations, PIN/PUK unlock, and subscriber identification (KYC) in compliance with regulatory standards.",
-      "Assisted customers with account ownership changes, claim investigations, and issue resolution, ensuring high satisfaction and trust.",
-      "Provided financial services support such as fund claims and account verification, for users with lost or inaccessible accounts.",
-      "Maintained records of transactions and customer interactions, contributing to the accuracy and integrity of customer data.",
-      "Educated customers on financial product usage, mobile platforms, and security awareness to prevent fraud and unauthorised access.",
-      "Collaborated with team members to improve service delivery and customer experience, fostering a positive work environment.",
-      "Ensuring compliance with Safaricom's policies and procedures.",
-    ],
-  },
+  // {
+  //   title: "Customer Support Representative (SAF Franchise) ",
+  //   company: "Pinless Communication Limited",
+  //   location: "Kilifi - Kenya",
+  //   date: "March 2025 - Present",
+  //   description: [
+  //     "Processed mobile money transactions, including cash deposits, withdrawals, and fund transfers with accuracy and attention to detail.",
+  //     "Handled SIM replacements, new SIM activations, PIN/PUK unlock, and subscriber identification (KYC) in compliance with regulatory standards.",
+  //     "Assisted customers with account ownership changes, claim investigations, and issue resolution, ensuring high satisfaction and trust.",
+  //     "Provided financial services support such as fund claims and account verification, for users with lost or inaccessible accounts.",
+  //     "Maintained records of transactions and customer interactions, contributing to the accuracy and integrity of customer data.",
+  //     "Educated customers on financial product usage, mobile platforms, and security awareness to prevent fraud and unauthorised access.",
+  //     "Collaborated with team members to improve service delivery and customer experience, fostering a positive work environment.",
+  //     "Ensuring compliance with Safaricom's policies and procedures.",
+  //   ],
+  // },
   {
     title: "ICT Attache",
     company: "Pwani University",

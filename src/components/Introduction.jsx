@@ -1,5 +1,5 @@
 import React from "react";
-import Kassim from "../assets/kassim.png";
+import Kassim from "../assets/kassim-1.png";
 
 const Introduction = () => {
   return (
@@ -25,7 +25,7 @@ const Introduction = () => {
             <img
               src={Kassim}
               alt="hero"
-              className="w-3/5 mx-auto md:mx-1 mt-10"
+              className="w-3/5 h-3/5 mx-auto md:mx-1 mt-10"
             />
           </div>
         </div>
