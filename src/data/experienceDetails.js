@@ -21,9 +21,14 @@ const experienceDetails = [
     location: "Kilifi - Kenya",
     date: "Jan 2023 - Apr 2023",
     description: [
+      "Performed routine maintenance on ICT equipment to ensure continuous performance.",
+      "Managed hardware and software installation, customization and upgrades, optimizing system efficiency and reliability.",
+      "Provided technical support to system users, resolving issues and conducting user training.",
+      "Administered LAN networks, monitoring capacity, performance, and security.",
+      "Supported network and system administration, troubleshooting and resolving hardware and software issues.",
+      "Conducted staff training on ICT systems usage, improving overall tech literacy.",
       "Boosted staff productivity by 20% through effective technical support, swiftly troubleshooting and resolving hardware and software issues.",
       "Enhanced network reliability and efficiency by installing, configuring, and maintaining computer systems and networks, reducing downtime by 15%.",
-      "Installed, configured, and maintained computer systems and networks.",
     ],
   },
   {
@@ -52,6 +57,6 @@ export default experienceDetails;
 
 export const volunteer = [
   "Upgraded technology infrastructure at Kilifi Township Secondary School by installing Windows operating system, enhancing educational resources for 500+ students.",
-  "Contributed to environmental sustainability by participating in mangrove restoration efforts at Kiriba/Wangwani, increasing local mangrove coverage by 10%.",
+  "Contributed to environmental sustainability by participating in mangrove restoration efforts, increasing local mangrove coverage by 10%.",
   "Empowered underprivileged youth by volunteering as a coding instructor at a local community centre, enhancing digital literacy and coding skills for over 50 participants.",
 ];
