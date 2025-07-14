@@ -1,11 +1,43 @@
 const skillsDetails = [
   {
-    title: "JavaScript ",
-    percentage: 65,
+    title: "Operating Systems",
+    percentage: 81,
   },
   {
-    title: "Python ",
-    percentage: 46,
+    title: "System Administration",
+    percentage: 64,
+  },
+  {
+    title: "Network Administration",
+    percentage: 82,
+  },
+  {
+    title: "Hardware Diagnosis and Repair",
+    percentage: 77,
+  },
+  {
+    title: "Software Installation and Configuration",
+    percentage: 88,
+  },
+  {
+    title: "Computer Security",
+    percentage: 89,
+  },
+  {
+    title: "Mobile Device Management",
+    percentage: 94,
+  },
+  {
+    title: "Cloud Computing",
+    percentage: 63,
+  },
+  {
+    title: "Problem Solving",
+    percentage: 100,
+  },
+  {
+    title: "JavaScript ",
+    percentage: 65,
   },
   {
     title: "React.js",
@@ -18,10 +50,6 @@ const skillsDetails = [
   {
     title: "Node.js",
     percentage: 45,
-  },
-  {
-    title: "Django",
-    percentage: 23,
   },
   {
     title: "HTML",
@@ -40,10 +68,6 @@ const skillsDetails = [
     percentage: 41,
   },
   {
-    title: "PHP",
-    percentage: 63,
-  },
-  {
     title: "Figma",
     percentage: 82,
   },
@@ -54,42 +78,6 @@ const skillsDetails = [
   {
     title: "Prototyping",
     percentage: 75,
-  },
-  {
-    title: "Operating Systems",
-    percentage: 81,
-  },
-  {
-    title: "System Administration",
-    percentage: 64,
-  },
-  {
-    title: "Network Administration",
-    percentage: 82,
-  },
-  {
-    title: "Hardware Diagnosis and Repair",
-    percentage: 77,
-  },
-  {
-    title: "Problem Solving",
-    percentage: 100,
-  },
-  {
-    title: "Software Installation and Configuration",
-    percentage: 88,
-  },
-  {
-    title: "Computer Security",
-    percentage: 89,
-  },
-  {
-    title: "Mobile Device Management",
-    percentage: 94,
-  },
-  {
-    title: "Cloud Computing",
-    percentage: 63,
   },
   {
     title: "Data Analysis",
@@ -121,12 +109,12 @@ const skillsDetails = [
   },
   {
     title: "Team Spirit",
-    percentage: 100,
+    percentage: 97,
   },
 
   {
     title: "Communication",
-    percentage: 100,
+    percentage: 98,
   },
   {
     title: "Time Management",
@@ -134,7 +122,7 @@ const skillsDetails = [
   },
   {
     title: "Leadership",
-    percentage: 100,
+    percentage: 95,
   },
   {
     title: "Laravel",
@@ -143,7 +131,7 @@ const skillsDetails = [
 
   {
     title: "Creativity",
-    percentage: 100,
+    percentage: 99,
   },
   {
     title: "Critical Thinking",
@@ -159,7 +147,7 @@ const skillsDetails = [
   },
   {
     title: "Adaptability",
-    percentage: 100,
+    percentage: 98,
   },
   {
     title: "Social Awareness",

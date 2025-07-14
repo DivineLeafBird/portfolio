@@ -1,5 +1,10 @@
 const certificateDetails = [
   {
+    title: "Networking Basics",
+    school: "Cisco Networking Academy",
+    date: "Apr 2025",
+  },
+  {
     title: "Google IT Support Professional Certificate",
     school: "Coursera",
     date: "Dec 2021",
