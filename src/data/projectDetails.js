@@ -17,21 +17,20 @@ import Renkla from "../assets/renkla.png";
 const projectDetails = [
   {
     id: 1,
-    imgSrc: Foodie4,
-    name: "Foodie App",
-    task: "Design",
-    platform: "Mobile",
-    role: "UX / UI Designer",
-    tech: ["Figma", "Figjam", "UX / UI"],
-    stack: ["Figma", "UX Design"],
-    images: [Foodie5, Foodie, Foodie2, Foodie3, Foodie4, Foodie6],
-    category: "design",
+    imgSrc: Purpletray,
+    name: "Purpletray",
+    task: "Frontend",
+    platform: "Web",
+    role: "Software Engineer",
+    tech: ["React", "Node.js", "Vite"],
+    stack: ["HTML", "JavaScript", "Tailwind CSS", "React", "Node.js", "Vite"],
+    images: [Purpletray],
+    category: "web",
     intro:
-      "An Intuitive design of a Food Ordring App for a take-out restaurant.",
+      "Practical example of (Single Page Application (SPA) with Framer motion animations using React.",
     description:
-      "Foodie is a food ordering app designed for individuals who want a quick and convenient way to get delicious takeout meals. The app offers a wide variety of cuisines to choose from, all with the ability to order for pickup or delivery. Foodie is  your ultimate solution for satisfying your cravings with just a few taps on your phone. Whether you're in the mood for mouthwatering pasta, spicy curry, or a classic burger, Foodie has got you covered with its extensive variety of cuisines.",
-    githubLink:
-      "https://www.figma.com/design/QN0X7HjqPldz9KqxHyhS5j/Food-Delivery-App?t=Wfy69bnTiPfzP6zt-1",
+      "Purpletray is a web application for student tutoring. Get matched with experienced tutors who specialize in your area of interest. Whether it's programming, language learning, music, or any other skill, our tutors provide personalized lesson plans and tailored learning strategies to help you achieve your goals. Purpletray is your one-stop solution for finding the perfect tutor to help you reach your full potential.",
+    githubLink: "https://github.com/DivineLeafBird/react-project-purpletray",
   },
   {
     id: 2,
@@ -52,23 +51,6 @@ const projectDetails = [
   },
   {
     id: 3,
-    imgSrc: Purpletray,
-    name: "Purpletray",
-    task: "Frontend",
-    platform: "Web",
-    role: "Software Engineer",
-    tech: ["React", "Node.js", "Vite"],
-    stack: ["HTML", "JavaScript", "Tailwind CSS", "React", "Node.js", "Vite"],
-    images: [Purpletray],
-    category: "web",
-    intro:
-      "Practical example of (Single Page Application (SPA) with Framer motion animations using React.",
-    description:
-      "Purpletray is a web application for student tutoring. Get matched with experienced tutors who specialize in your area of interest. Whether it's programming, language learning, music, or any other skill, our tutors provide personalized lesson plans and tailored learning strategies to help you achieve your goals. Purpletray is your one-stop solution for finding the perfect tutor to help you reach your full potential.",
-    githubLink: "https://github.com/DivineLeafBird/react-project-purpletray",
-  },
-  {
-    id: 4,
     imgSrc: Venpic,
     name: "Venpic Agencies",
     task: "Fullstack",
@@ -90,6 +72,24 @@ const projectDetails = [
     description:
       "Developed web application of the Venpic design that  simplifies the rental search for tenants. Tenants can browse listings with detailed filters, explore properties with virtual tours, and manage applications electronically. The agency can create professional listings, target ideal tenants, manage applications, and collect rent seamlessly - all within one user-friendly web app. Find your perfect place or fill your vacancy effortlessly with Venpic.",
     githubLink: "https://github.com/DivineLeafBird/rental-homes",
+  },
+  {
+    id: 4,
+    imgSrc: Foodie4,
+    name: "Foodie App",
+    task: "Design",
+    platform: "Mobile",
+    role: "UX / UI Designer",
+    tech: ["Figma", "Figjam", "UX / UI"],
+    stack: ["Figma", "UX Design"],
+    images: [Foodie5, Foodie, Foodie2, Foodie3, Foodie4, Foodie6],
+    category: "design",
+    intro:
+      "An Intuitive design of a Food Ordering App for a take-out restaurant.",
+    description:
+      "Foodie is a food ordering app designed for individuals who want a quick and convenient way to get delicious takeout meals. The app offers a wide variety of cuisines to choose from, all with the ability to order for pickup or delivery. Foodie is  your ultimate solution for satisfying your cravings with just a few taps on your phone. Whether you're in the mood for mouthwatering pasta, spicy curry, or a classic burger, Foodie has got you covered with its extensive variety of cuisines.",
+    githubLink:
+      "https://www.figma.com/design/QN0X7HjqPldz9KqxHyhS5j/Food-Delivery-App?t=Wfy69bnTiPfzP6zt-1",
   },
   {
     id: 5,

@@ -1,24 +1,28 @@
 import React from "react";
 import Kassim from "../assets/kassim.png";
+import getExperienceYears from "../data/yearsOfExperience";
 
 const Introduction = () => {
+  const experienceYears = getExperienceYears(2022);
   return (
     <>
       <section className="gradientBg text-tertiary px-5 py-20 max-w-screen-2xl mx-auto">
         <div className="flex flex-col-reverse md:flex-row items-center justify-center">
           <div className="container mx-auto md:w-1/2">
             <h1 className="text-2xl font-semibold mt-5 text-center md:text-left ">
-              Hi, I'm <span className="text-pink">Kassim</span>
+              Hello, I'm <span className="text-pink">Kassim</span>
             </h1>
             <p className="text-lg mt-5 text-center md:text-left">
-              Software Engineer, <br />
-              IT Support Specialist, and UX / UI Designer.
+              A Junior <em className="text-pink/95">Software Engineer</em>,{" "}
+              <em className="text-pink/95">IT Support Specialist</em>, and{" "}
+              <em className="text-pink/95">UX / UI Designer.</em>
             </p>
             <p className="text-lg mt-5">
-              I bring together the skills of a Software engineer, a UX/UI
-              designer, and an IT support specialist. I can craft beautiful and
-              intuitive interfaces, write the code that makes them tick, and
-              then troubleshoot any glitches that pop up.
+              With a diverse skill set, and{" "}
+              <strong>{experienceYears}+ years</strong> of experience, I can
+              deliver efficient IT support, craft beautiful and intuitive
+              interfaces, write the code that makes them tick, and troubleshoot
+              any glitches that pop up.
             </p>
           </div>
           <div>

@@ -2,6 +2,7 @@ import React from "react";
 import Kassim from "../assets/kassim.png";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import GetInTouch from "./GetInTouch";
 
 const ContactInfo = () => {
   const initiateGoogleMeetCall = () => {
@@ -21,10 +22,10 @@ const ContactInfo = () => {
             </div>
 
             <div className="flex flex-col p-5">
-              <h1 className="text-lg text-center font-semibold text-pink">
+              <h1 className="text-lg ml-14 font-semibold text-pink">
                 Kassim Yahya Ali
               </h1>
-              <p className="text-xs md:text-sm md:text-nowrap mt-1 opacity-90">
+              <p className="text-xs md:text-sm md:text-nowrap mt-1 text-pink">
                 Software Engineer, IT Support Specialist, UX/UI Designer, Data
                 Analyst
               </p>
@@ -64,9 +65,6 @@ const ContactInfo = () => {
               >
                 Let's talk
               </button>
-              <span className="text-[11px] pl-3 md:pl-6 pt-1 opacity-85">
-                kassimyahya93@gmail.com
-              </span>
             </div>
           </div>
           <div className="bg-primary bg-opacity-50 rounded-lg md:gap-4 p-5">
@@ -75,12 +73,19 @@ const ContactInfo = () => {
             </h4>
             <figure>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63706.2576353836!2d39.7801813330599!3d-3.6689184962616754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x183fe62b8fadac17%3A0x8c1a6e02a9960388!2sKiriba%2FWangwani!5e0!3m2!1sen!2ske!4v1715449228642!5m2!1sen!2ske&amp;samesite=none"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63706.25763538672!2d39.78018131249438!3d-3.6689184962179633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x183fe62b8fadac17%3A0x8c1a6e02a9960388!2sKiriba%2FWangwani!5e0!3m2!1sen!2ske!4v1753668882168!5m2!1sen!2ske"
                 loading="lazy"
                 rel="noopener noreferrer"
                 className="w-full h-96 rounded-lg"
               ></iframe>
             </figure>
+          </div>
+          <div className="bg-primary bg-opacity-50 rounded-lg">
+            <GetInTouch
+              bgColor="bg-transparent"
+              title="Leave A Message"
+              titleTextStyle="text-lg text-center font-semibold text-pink pb-4"
+            />
           </div>
         </div>
       </section>
@@ -89,3 +94,7 @@ const ContactInfo = () => {
 };
 
 export default ContactInfo;
+
+// Kiriba/Wangwani  https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63706.25763538672!2d39.78018131249438!3d-3.6689184962179633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x183fe62b8fadac17%3A0x8c1a6e02a9960388!2sKiriba%2FWangwani!5e0!3m2!1sen!2ske!4v1753668882168!5m2!1sen!2ske
+
+// Nairobi  https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.3586908131!2d36.68257835708777!3d-1.3028602772359434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1753440189799!5m2!1sen!2ske

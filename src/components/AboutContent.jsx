@@ -1,14 +1,16 @@
 import React from "react";
 import Kassim from "../assets/kassim.png";
 import rolesDetails from "../data/rolesDetails";
+import getAge from "../data/age";
 
 const AboutContent = () => {
+  const age = getAge("1999-08-03");
   const background = [
     {
       title: "Personal Background",
       content: [
         "Name: Kassim Yahya Ali",
-        "Age: 25 Years",
+        `Age: ${age} Years`,
         "Postal Address: 88240-80100 Mombasa, Kenya",
         "Highest Education: BSc, Information Technology",
         "Professions: Software Engineer, IT Support Specialist, UX/UI Designer, Data Analyst",
@@ -70,18 +72,17 @@ const AboutContent = () => {
                     <p className="font-normal text-base lg:text-lg text-center p-2  text-secondary opacity-95">
                       {item.intro}
                     </p>
-                    <p className="font-normal text-base/7 lg:text-lg  text-secondary p-2">
-                      <strong className="text-primary">
-                        Professional Experience:
-                      </strong>{" "}
-                      {item.experience}
-                    </p>
-                    <p className="font-normal  text-base/7 lg:text-lg  text-secondary p-2">
-                      <strong className="text-primary">
-                        Skills and Expertise:
-                      </strong>{" "}
-                      {item.skills}
-                    </p>
+                    <div className="flex flex-row flex-wrap items-center justify-center gap-2 p-2">
+                      {Array.isArray(item.skills) &&
+                        item.skills.map((skill, skillIndex) => (
+                          <span
+                            key={skillIndex}
+                            className=" border border-primary text-secondary px-4 py-1 text-nowrap rounded-lg text-xs md:text-sm lg:text-base"
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                    </div>
                   </div>
                 ))}
               </div>

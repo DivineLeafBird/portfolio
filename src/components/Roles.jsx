@@ -1,4 +1,3 @@
-import React from "react";
 import Developer from "../assets/developer.png";
 import Support from "../assets/support.png";
 import Designer from "../assets/designer.png";
@@ -8,7 +7,7 @@ const Roles = () => {
     <>
       <section className="gradientBg text-tertiary px-5 py-10 max-w-screen-2xl mx-auto ">
         <h2 className="flex justify-center text-2xl text-tertiary font-semibold pb-8">
-          My Roles
+          Roles
         </h2>
         <div className="flex flex-col md:flex-row justify-center items-center md:gap-12 gap-8 text-center">
           <div className="bg-pink md:w-1/4 rounded-[35px] px-5 py-8 space-y-4 shadow-3xl items-center flex flex-col justify-center hover:-translate-y-4 transition-all duration-300 cursor-pointer">

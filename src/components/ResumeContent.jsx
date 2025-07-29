@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaClipboardUser, FaGraduationCap } from "react-icons/fa6";
 import { MdRadioButtonChecked, MdVolunteerActivism } from "react-icons/md";
 import { TbCertificate } from "react-icons/tb";
@@ -6,13 +6,26 @@ import { IoBulb, IoLanguage } from "react-icons/io5";
 import education from "../data/educationDetails";
 import experience, { volunteer } from "../data/experienceDetails";
 import certificates from "../data/certificateDetails";
-import skills from "../data/skillsDetails";
+import skillsWallet from "../data/skillsWallet";
+
 const ResumeContent = () => {
   // const volunteer = [
   //   "Windows installation on new Desktop computers at Kilifi Township Secondary School.",
   //   "Mangrove restoration at Kiriba / Wangwani.",
   //   "Volunteer as a coding instructor at a local community center to teach coding skills to underprivileged youth.",
   // ];
+
+  // State variables to manage the visibility of skill categories
+  const [showSkillCategory, setShowSkillCategory] = useState("softSkills");
+
+  // Toggle functions for skill categories
+  // These functions toggle the visibility of each skill category
+  const toggleSkillCategory = (category) => {
+    setShowSkillCategory((prevCategory) =>
+      prevCategory === category ? "" : category
+    );
+  };
+
   return (
     <>
       <section className="gradientBg text-tertiary items-center justify-center px-4 lg:px-48 py-20 min-h-screen">
@@ -174,7 +187,55 @@ const ResumeContent = () => {
               <h3>Skills</h3>
             </div>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center py-2">
+            <div className="bg-secondary bg-opacity-30 px-2 md:px-8 py-4 rounded-lg w-full">
+              {skillsWallet.map((skillCategory) => (
+                <div
+                  key={skillCategory.id}
+                  className="flex-1 items-center border-b border-tertiary/50 py-2"
+                >
+                  <div className="grid grid-cols-[auto_1fr] gap-8 mx-4 md:mx-12 rounded-lg items-start bg-transparent">
+                    <span
+                      onClick={() => toggleSkillCategory(skillCategory.title)}
+                      className={`bg-secondary w-10 h-10 flex items-center justify-center rounded-full cursor-pointer  
+                      }`}
+                    >
+                      {showSkillCategory === skillCategory.title ? "-" : "+"}
+                    </span>
+                    <div className="flex flex-col">
+                      <div className="flex items-center gap-2">
+                        <span className="text-tertiary text-lg ">
+                          {skillCategory.title}
+                        </span>
+                      </div>
+                      {showSkillCategory === skillCategory.title && (
+                        <div className="flex flex-wrap gap-2 my-6 p-2 -ml-12 md:ml-0">
+                          {skillCategory.skills.map((skill, index) => (
+                            <span
+                              key={index}
+                              className=" border border-tertiary/50 text-tertiary/60 px-4 py-1 text-wrap rounded-lg text-xs md:text-sm lg:text-base"
+                            >
+                              {skill.name}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default ResumeContent;
+
+{
+  /* <div className="flex items-center justify-center">
             <div className="bg-secondary bg-opacity-30 px-8 py-4 rounded-lg md:w-1/2">
               <ul>
                 {skills.map((item, index) => (
@@ -193,11 +254,5 @@ const ResumeContent = () => {
                 ))}
               </ul>
             </div>
-          </div>
-        </div>
-      </section>
-    </>
-  );
-};
-
-export default ResumeContent;
+          </div> */
+}

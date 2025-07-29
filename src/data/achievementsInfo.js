@@ -1,8 +1,10 @@
+import getExperienceYears from "./yearsOfExperience";
+
 export const achievementsInfo = [
   {
     id: 1,
     icon: "FaCode",
-    metric: "3",
+    metric: getExperienceYears(2022).toString(),
     description: "Years of experience",
   },
   {
@@ -14,13 +16,13 @@ export const achievementsInfo = [
   {
     id: 3,
     icon: "FaBuilding",
-    metric: "4",
+    metric: "6",
     description: "Companies worked with",
   },
   {
     id: 4,
     icon: "FaHandshake",
-    metric: "25",
+    metric: "15",
     description: "Clients",
   },
 ];
