@@ -73,7 +73,7 @@ const ContactInfo = () => {
             </h4>
             <figure>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63706.25763538672!2d39.78018131249438!3d-3.6689184962179633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x183fe62b8fadac17%3A0x8c1a6e02a9960388!2sKiriba%2FWangwani!5e0!3m2!1sen!2ske!4v1753668882168!5m2!1sen!2ske"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.3586908131!2d36.68257835708777!3d-1.3028602772359434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1753440189799!5m2!1sen!2ske"
                 loading="lazy"
                 rel="noopener noreferrer"
                 className="w-full h-96 rounded-lg"
