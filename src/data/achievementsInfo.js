@@ -4,7 +4,7 @@ export const achievementsInfo = [
   {
     id: 1,
     icon: "FaCode",
-    metric: getExperienceYears(2022).toString(),
+    metric: getExperienceYears(2024).toString(),
     description: "Years of experience",
   },
   {
