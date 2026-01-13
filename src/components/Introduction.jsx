@@ -3,7 +3,7 @@ import Kassim from "../assets/kassim.png";
 import getExperienceYears from "../data/yearsOfExperience";
 
 const Introduction = () => {
-  const experienceYears = getExperienceYears(2022);
+  const experienceYears = getExperienceYears(2024);
   return (
     <>
       <section className="gradientBg text-tertiary px-5 py-20 max-w-screen-2xl mx-auto">
@@ -13,8 +13,8 @@ const Introduction = () => {
               Hello, I'm <span className="text-pink">Kassim</span>
             </h1>
             <p className="text-lg mt-5 text-center md:text-left">
-              A Junior <em className="text-pink/95">Software Engineer</em>,{" "}
-              <em className="text-pink/95">IT Support Specialist</em>, and{" "}
+              A Junior <em className="text-pink/95">IT Support Specialist</em>,{" "}
+              <em className="text-pink/95">Software Engineer</em>, and{" "}
               <em className="text-pink/95">UX / UI Designer.</em>
             </p>
             <p className="text-lg mt-5">

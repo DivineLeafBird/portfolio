@@ -26,7 +26,7 @@ const ContactInfo = () => {
                 Kassim Yahya Ali
               </h1>
               <p className="text-xs md:text-sm md:text-nowrap mt-1 text-pink">
-                Software Engineer, IT Support Specialist, UX/UI Designer, Data
+                IT Support Specialist,Software Engineer, UX/UI Designer, Data
                 Analyst
               </p>
               <p className="flex items-center gap-8 mt-6">
