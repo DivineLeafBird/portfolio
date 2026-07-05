@@ -23,32 +23,9 @@ const skillsWallet = [
       { name: "Microsoft Office Suite & Google Workspace Suite" },
     ],
   },
+
   {
     id: 2,
-    title: "Soft Skills",
-    skills: [
-      { name: "Effective Communication (Technical & Non-Technical)" },
-      { name: "Attention to Detail" },
-      { name: "Adaptability & Flexibility" },
-      { name: "Documentation and Reporting" },
-      { name: "Continuous Learning & Self-Motivation" },
-      { name: "Time Management" },
-      { name: "Leadership" },
-      { name: "Problem Solving" },
-      { name: "Team Collaboration" },
-      { name: "Analytical Thinking" },
-      { name: "Creativity" },
-      { name: "Emotional Intelligence" },
-      { name: "Conflict Resolution" },
-      { name: "Negotiation" },
-      { name: "Social Awareness" },
-      { name: "Critical Thinking" },
-      { name: "Decision Making" },
-      { name: "Learning Agility" },
-    ],
-  },
-  {
-    id: 3,
     title: "Software Engineering ",
     skills: [
       { name: "Frontend Development (HTML, CSS, JavaScript)" },
@@ -75,17 +52,9 @@ const skillsWallet = [
       { name: "Software Development Lifecycle (SDLC) Understanding" },
     ],
   },
-  // {
-  //   id: 4,
-  //   title: "Project Management Skills",
-  //   skills: [
-  //     { name: "Team Spirit & Collaboration Tools" },
-  //     { name: "Agile Methodologies & Scrum" },
-  //     { name: "Project Management Tools (Jira, Trello)" },
-  //   ],
-  // },
+
   {
-    id: 5,
+    id: 3,
     title: "UX/UI Design",
     skills: [
       { name: "User Research & Analysis" },
@@ -97,6 +66,39 @@ const skillsWallet = [
       { name: "Design Systems & Style Guides" },
       { name: "Responsive Design Principles" },
       { name: "Accessibility Standards (WCAG)" },
+    ],
+  },
+  {
+    id: 4,
+    title: "Project Management",
+    skills: [
+      { name: "Team Spirit & Collaboration Tools" },
+      { name: "Agile Methodologies & Scrum" },
+      { name: "Project Management Tools (Jira, Trello)" },
+    ],
+  },
+  {
+    id: 5,
+    title: "Soft Skills",
+    skills: [
+      { name: "Effective Communication (Technical & Non-Technical)" },
+      { name: "Attention to Detail" },
+      { name: "Adaptability & Flexibility" },
+      { name: "Documentation and Reporting" },
+      { name: "Continuous Learning & Self-Motivation" },
+      { name: "Time Management" },
+      { name: "Leadership" },
+      { name: "Problem Solving" },
+      { name: "Team Collaboration" },
+      { name: "Analytical Thinking" },
+      { name: "Creativity" },
+      { name: "Emotional Intelligence" },
+      { name: "Conflict Resolution" },
+      { name: "Negotiation" },
+      { name: "Social Awareness" },
+      { name: "Critical Thinking" },
+      { name: "Decision Making" },
+      { name: "Learning Agility" },
     ],
   },
 ];
